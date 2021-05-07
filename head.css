@@ -1,0 +1,236 @@
+a {
+    text-decoration: none;
+}
+
+.name {
+    display: block;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.name span:nth-child(1) {
+    color: rgb(66, 133, 244);
+}
+.name span:nth-child(2) {
+    color: rgb(234, 67, 53);
+}
+.name span:nth-child(3) {
+    color: rgb(251, 188, 5);
+}
+.name span:nth-child(4) {
+    color: rgb(66, 133, 244);
+}
+.name span:nth-child(5) {
+    color: rgb(52, 168, 83);
+}
+.name span:nth-child(6) {
+    color: rgb(234, 67, 53);
+}
+.left_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:12px 16px;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+}
+.icon_bg {
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.icon_bg > img {
+    align-items: center;
+    display: flex;
+    width: 16px;
+    height: 16px;
+}
+.icon_bg:hover {
+    border-radius: 50%;
+    background-color: rgba(241, 243, 244, 1);
+}
+.hamberg {
+    z-index: 1;
+    list-style: none;
+    display: none;
+    position: absolute;
+    text-align: center;
+    right: 10px;
+    width: 280px;
+    height: 210px;
+    margin-top: 16px;
+    padding: 12px 16px 0;
+    background-color: #ffffff;
+    border: 0 solid #a7a6a6;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+}
+.hamberg > a {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    width: 80px;
+    height: 80px;
+    padding: 6px;
+    cursor: pointer;
+}
+.hamberg > a:hover {
+    background-color: #e8f0fe;
+    border: none;
+    border-radius: 8px;
+}
+.hamberg .left_icon {
+    float: left;
+}
+.hamberg .right_icon {
+    float: right;
+}
+.hamberg > a > p {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: black;
+    margin: 0;
+}
+.hamberg > a > i {
+    font-size: 28px;
+    padding: 8px;
+}
+.show {
+    display: block;
+}
+.loginBtn {
+    font-family: 'Nanum Gothic', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(66, 133, 244);
+    padding: 9px 23px;
+    margin-left: 8px;
+    font-weight: bold;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 34px;
+}
+.loginBtn:hover {
+    box-shadow: 0px 2px 10px 0px rgba(66,133,244,0.6);
+}
+.user_bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+    width: 32px;
+    height: 32px;
+}
+.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #7e57c2;
+    color: white;
+}
+.user_bg:hover{
+    margin: 4px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(241, 243, 244, 1);
+}
+.logoutBtn {
+    font-family: 'Nanum Gothic', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(211, 211, 211);
+    padding: 9px 23px;
+    margin-left: 8px;
+    font-weight: bold;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 34px;
+}
+.logoutBtn:hover {
+    margin-left: 6px;
+    border: 2px solid #7e57c2;
+    color: #7e57c2;
+}
+
+@media screen and (max-width: 505px){
+    .name {
+        font-size: 24px;
+    }
+    .icon_bg {
+        width: 34px;
+        height: 34px;
+    }
+    .icon_bg > img {
+        width: 14px;
+        height: 14px;
+    }
+    .hamberg {
+        width: 230px;
+        height: 170px;
+        margin-top: 12px;
+        padding: 10px 14px 0;
+    }
+    .hamberg > a {
+        width: 60px;
+        height: 60px;
+        padding: 5px;
+    }
+    .hamberg > a > i {
+        font-size: 20px;
+        padding: 6px;
+    }
+    .hamberg > a >p {
+        font-size: 12px;
+        margin: 0;
+    }
+    .loginBtn {
+        font-size: 12px;
+        padding: 6px 21px;
+        height: 28px;
+    }
+    .logoutBtn {
+        font-size: 12px;
+        padding: 6px 21px;
+        height: 28px;
+    }
+    .user_bg {
+        width: 28px;
+        height: 28px;
+        margin: 6px;
+    }
+    .user {
+        font-size: 12px;
+        width: 28px;
+        height: 28px;
+    }
+    .user_bg:hover {
+        width: 32px;
+        height: 32px;
+    }
+}

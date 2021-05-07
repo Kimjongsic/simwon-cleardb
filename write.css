@@ -1,0 +1,169 @@
+body {
+    font-family: 'Josefin Sans', 'Nanum Gothic', sans-serif;
+    margin: 0;
+}
+h1 {
+    width: 970.4px;
+    margin-top: 32px;
+    margin-bottom: 24px;
+    padding: 8px 0;
+    border-bottom: 3px solid rgb(211, 211, 211);
+    color: #5f6368;
+    font-weight: normal;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+textarea:focus {
+    outline: none;
+}
+.board-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.write_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 970.4px;
+}
+.write_tit {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 8px;
+    height: 40px;
+}
+.write_tit span {
+    width: 80px;
+    font-size: 16px;
+}
+.write_bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 888.4px;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 4px;
+}
+.write_bar:focus-within {
+    border: 2px solid rgb(66, 133, 244);
+}
+#utitle {
+    resize: none;
+    width: 870.4px;
+    border: 0;
+    border-radius: 4px;
+    line-height: 32px;
+    font-size: 16px;
+    padding: 0 8px;
+}
+.secret_wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 8px 0;
+}
+.secret_wrap span {
+    width: 80px;
+    font-size: 14px;
+}
+.checkbox_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.secret_btn {
+    margin: 0;
+}
+.write_con {
+    margin-top: 8px;
+}
+.write_con div {
+    width: 970.4px;
+    height: 300px;
+}
+#ucontent {
+    resize: vertical;
+    width: 960.4px;
+    height: 290px;
+    border: 0;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.submit_btn {
+    margin-top: 24px;
+}
+.write_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 0;
+    padding: 7px 21px;
+    border-radius: 6px;
+    border: 0;
+    color: white;
+    background-color: rgb(66, 133, 244);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 505px) {
+    h1 {
+        width: 100%;
+        font-size: 24px;
+        padding-left: 16px;
+    }
+    .post_title {
+        width: 100%;
+        padding-left: 16px;
+    }
+    .write_wrap {
+        width: 100%;
+    }
+    .write_tit span {
+        width: 15%;
+        padding-left: 16px;
+        font-size: 14px;
+    }
+    .write_bar {
+        width: 75%;
+        margin-right: 16px;
+    }
+    #utitle {
+        width: 100%;
+    }
+    .secret_wrap {
+        width: 100%;
+    }
+    .secret_wrap span {
+        width: 15%;
+        padding-left: 16px;
+        font-size: 12px;
+    }
+    .secret_btn {
+        zoom: 1;
+    }
+    .write_con {
+        width: 90%;
+        padding: 0 16px;
+    }
+    .write_con div {
+        width: 100%;
+    }
+    #ucontent {
+        width: 100%;
+    }
+    .submit_btn {
+        margin-top: 8px;
+    }
+    .write_btn {
+        font-size: 12px;
+    }
+}
